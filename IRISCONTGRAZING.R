@@ -6,7 +6,7 @@ library(ggmap)
 library(mapdata)
 library(readr)
 rm(list = ("")) 
-
+#this is great
 m=read.csv("continuous_grazing.csv")
 str(m) 
 
