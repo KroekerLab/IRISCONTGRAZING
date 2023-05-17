@@ -5,10 +5,13 @@ library(sciplot)
 library(ggmap)
 library(mapdata)
 library(readr)
-rm(list = ("")) 
+#rm(list = ("")) 
 #this is great
 m=read.csv("continuous_grazing.csv")
 str(m) 
+
+filt<-m%>% #testing filter function
+  filter( day=="1")
 
 m$day<-as.numeric(as.character(m$day)) #Change structure from numeric to character
 
