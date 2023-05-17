@@ -13,6 +13,8 @@ str(m)
 filt<-m%>% #testing filter function
   filter( day=="1")
 
+arrange<-m%>% #testing arrange function
+  arrange(day,urch_diam)
 m$day<-as.numeric(as.character(m$day)) #Change structure from numeric to character
 
 m1<-m%>% #new column for grazing rate 
