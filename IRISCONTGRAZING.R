@@ -12,7 +12,7 @@ str(m)
 
 m$day<-as.numeric(as.character(m$day)) #Change structure from numeric to character
 
-m1<-m%>% #new column for grazing rate
+m1<-m%>% #new column for grazing rate 
   mutate(grazing_rate=kelp_wt_start- kelp_wt_end)
 
 m2<-m1 [-c(4),] #delete column 4 error 
